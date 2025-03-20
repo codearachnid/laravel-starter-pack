@@ -24,4 +24,12 @@ class User extends Model
 ｝
 ```
 
-Then in routes/console.php `Schedule:: command ('model: prune')->daily();`
+Then in routes/console.php
+```php
+<?php
+
+use Illuminate\Support\Facades\Schedule;
+
+Schedule:: command ('model: prune')->daily();
+
+```
